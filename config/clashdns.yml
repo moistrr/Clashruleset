@@ -1,0 +1,55 @@
+# 健康检测
+my-check: &my-check
+  interval: 3600
+  health-check:
+    enable: true
+    url: https://www.google.com/generate_204
+    interval: 300
+    timeout: 5000
+
+# 定义自动测速节点
+auto-test: &auto-test
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 1800
+
+
+mixed-port: 7890
+allow-lan: true
+external-controller: '127.0.0.1:9090'
+ipv6: true
+tcp-concurrent: true
+unified-delay: true
+global-client-fingerprint: chrome
+keep-alive-interval: 15
+geodata-mode: true
+dns:
+    enable: true
+    listen: '0.0.0.0:1053'
+    use-hosts: true
+    ipv6: true
+    enhanced-mode: fake-ip
+    fake-ip-range: 198.18.0.1/16
+    fake-ip-filter: ['*', +.lan, +.local]
+    default-nameserver: [223.5.5.5,8.8.8.8,1.1.1.1]
+    nameserver: ['tls://dns.google', 'https://doh.opendns.com/dns-query', 'https://dns.cloudflare.com/dns-query']
+    proxy-server-nameserver: ['https://223.6.6.6/dns-query']
+    nameserver-policy: { 'geosite:cn,private': ['quic://223.5.5.5:853', 'https://1.12.12.12/dns-query'] }
+geox-url:
+    geoip: 'https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat'
+    geosite: 'https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat'
+geo-auto-update: true
+geo-update-interval: 24
+log-level: info
+profile:
+    store-selected: true
+    store-fake-ip: true
+sniffer:
+    enable: true
+    sniff: { TLS: { ports: [443, 8443] }, HTTP: { ports: [80, 8080-8880], override-destination: true } }
+    skip-domain: ['Mijia.Cloud', dlg.io.mi.com, +.apple.com]
+    force-domain: [google.com]
+hosts:
+    time.android.com: 203.107.6.88
+    time.facebook.com: 203.107.6.88
+    localhost: 127.0.0.1

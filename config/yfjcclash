@@ -2,7 +2,6 @@
 ruleset=📺Youtube,clash-classic:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml
 ruleset=🍿Netflix,clash-classic:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.yaml
 ruleset=🎵TikTok,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok.yaml
-ruleset=📺Emby,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Emby/Emby.list
 ruleset=💬OpenAI,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list
 ruleset=💬OpenAI,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Copilot/Copilot.list
 ruleset=💬OpenAI,clash-classic:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Gemini/Gemini.yaml
@@ -30,7 +29,6 @@ custom_proxy_group=🛩️下载专用`select`(0.1倍)
 custom_proxy_group=📺Youtube`select`[]⚡模式选择`[]✨自动选择`[]🌟手动选择`[]🇰🇷 韩国`[]🇸🇬 新加坡
 custom_proxy_group=🍿Netflix`select`[]⚡模式选择`[]✨自动选择`[]🌟手动选择`[]🇰🇷 韩国`[]🇸🇬 新加坡
 custom_proxy_group=🎵TikTok`select`[]⚡模式选择`[]✨自动选择`[]🌟手动选择`[]🇰🇷 韩国`[]🇸🇬 新加坡`[]🇺🇲 美国
-custom_proxy_group=📺Emby`select`[]⚡模式选择`[]✨自动选择`[]🌟手动选择`[]🇰🇷 韩国`[]🇸🇬 新加坡`[]DIRECT
 custom_proxy_group=💬OpenAI`select`[]⚡模式选择`[]✨自动选择`[]🌟手动选择`[]🇰🇷 韩国`[]🇸🇬 新加坡`[]🇺🇲 美国
 custom_proxy_group=🅱️Bilibili`select`[]DIRECT`[]⚡模式选择`[]✨自动选择`[]🌟手动选择`[]❄️冷门地区
 custom_proxy_group=🇭🇰 香港`url-test`(香港)`http://www.gstatic.com/generate_204`300,,50

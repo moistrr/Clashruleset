@@ -39,8 +39,8 @@ custom_proxy_group=🇸🇬 新加坡`url-test`(新加坡)`http://www.gstatic.co
 custom_proxy_group=🇨🇳 台湾`url-test`(台湾)`http://www.gstatic.com/generate_204`300,,50
 custom_proxy_group=🇰🇷 韩国`url-test`(韩国)`http://www.gstatic.com/generate_204`300,,50
 custom_proxy_group=🇺🇲 美国`url-test`(?=.*(美国))^((?!(0.1)).)*$`http://www.gstatic.com/generate_204`300,,50
-custom_proxy_group=✨自动选择`url-test`(?=.*(香港|日本|新加坡|台湾|韩国|美国))^((?!(家宽)).)*$`http://www.gstatic.com/generate_204`300,,50
-custom_proxy_group=⚖️负载均衡`load-balance`(?=.*(香港|美国))^((?!(家宽)).)*$`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=✨自动选择`url-test`(?=.*(日本|新加坡|韩国))^((?!(0.1)).)*$`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=⚖️负载均衡`load-balance`(?=.*(日本|新加坡|韩国))^((?!(0.1)).)*$`http://www.gstatic.com/generate_204`300,,50
 custom_proxy_group=🐟漏网之鱼`select`[]⚡模式选择`[]🌟手动选择
 custom_proxy_group=🛡直接连接`select`[]DIRECT`[]⚡模式选择`[]🌟手动选择
 ;设置分组标志位

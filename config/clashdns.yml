@@ -37,21 +37,8 @@ dns:
     nameserver-policy:
         'geosite:cn,private': ['quic://223.5.5.5:853', 'https://1.12.12.12/dns-query']
         '+.makima.online': [114.114.114.114] # 为 makima.online 添加解析策略
-geox-url:
-    geoip: 'https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat'
-    geosite: 'https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat'
-geo-auto-update: true
-geo-update-interval: 24
-log-level: info
-profile:
-    store-selected: true
-    store-fake-ip: true
-sniffer:
-    enable: true
-    sniff: { TLS: { ports: [443, 8443] }, HTTP: { ports: [80, 8080-8880], override-destination: true } }
-    skip-domain: ['Mijia.Cloud', dlg.io.mi.com, +.apple.com]
-    force-domain: [google.com]
 hosts:
+    makima.online: 203.107.6.88  # 直接将 makima.online 解析到指定的国内 IP 地址
     time.android.com: 203.107.6.88
     time.facebook.com: 203.107.6.88
     localhost: 127.0.0.1

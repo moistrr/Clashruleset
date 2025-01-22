@@ -36,7 +36,7 @@ dns:
     proxy-server-nameserver: ['https://223.6.6.6/dns-query']
     nameserver-policy:
         'geosite:cn,private': ['quic://223.5.5.5:853', 'https://1.12.12.12/dns-query']
-        '+.makima.online': [223.5.5.5, 119.29.29.29] # 为 makima.online 添加解析策略
+        '+.makima.online': [114.114.114.114] # 为 makima.online 添加解析策略
 geox-url:
     geoip: 'https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat'
     geosite: 'https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat'

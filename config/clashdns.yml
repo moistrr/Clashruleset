@@ -25,20 +25,11 @@ keep-alive-interval: 15
 geodata-mode: true
 dns:
     enable: true
-    listen: '0.0.0.0:1053'
-    use-hosts: true
-    ipv6: true
+    ipv6: false
+    default-nameserver: [223.5.5.5, 119.29.29.29]
     enhanced-mode: fake-ip
     fake-ip-range: 198.18.0.1/16
-    fake-ip-filter: ['*', +.lan, +.local]
-    default-nameserver: [223.5.5.5, 8.8.8.8, 1.1.1.1]
-    nameserver: ['tls://dns.google', 'https://doh.opendns.com/dns-query', 'https://dns.cloudflare.com/dns-query']
-    proxy-server-nameserver: ['https://223.6.6.6/dns-query']
-    nameserver-policy:
-        'geosite:cn,private': ['quic://223.5.5.5:853', 'https://1.12.12.12/dns-query']
-        '+.makima.online': [114.114.114.114] # 为 makima.online 添加解析策略
-hosts:
-    makima.online: 203.107.6.88  # 直接将 makima.online 解析到指定的国内 IP 地址
-    time.android.com: 203.107.6.88
-    time.facebook.com: 203.107.6.88
-    localhost: 127.0.0.1
+    use-hosts: true
+    nameserver: ['https://dns.alidns.com/dns-query', 'https://doh.pub/dns-query']
+    fallback: ['https://dns.alidns.com/dns-query', 'https://doh.pub/dns-query']
+    fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }

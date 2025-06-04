@@ -1,3 +1,4 @@
+geodata-mode: flase
 geox-url:
   geoip: >-
     https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.dat

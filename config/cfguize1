@@ -12,7 +12,7 @@ ruleset=☁️ 全球直连,rules/ACL4SSR/Clash/ChinaCompanyIp.list
 ruleset=☁️ 全球直连,[]GEOIP,CN
 ruleset=🦢 漏网之鱼,[]FINAL
 
-custom_proxy_group=⚡️ 节点选择`select
+custom_proxy_group=⚡️ 节点选择`select`(?=.*.)^((?!(欢乐时光|群组)).)*$
 custom_proxy_group=☁️ 全球直连`select`[]DIRECT`[]⚡️ 节点选择
 custom_proxy_group=🦢 漏网之鱼`select`[]⚡️ 节点选择`[]☁️ 全球直连
 

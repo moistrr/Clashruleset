@@ -6,23 +6,108 @@ log-level: info
 external-controller: '127.0.0.1:9090'
 unified-delay: true
 tcp-concurrent: true
+
 geoip: >-
-    https://ghfast.top/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.dat
+    https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.dat
 geosite: >-
-    https://ghfast.top/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat
+    https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat
 mmdb: >-
-    https://ghfast.top/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country-lite.mmdb
+    https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country-lite.mmdb
 asn: >-
-    https://ghfast.top/https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb
+    https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb
+
 dns:
     enable: true
     ipv6: false
-    default-nameserver: [223.5.5.5, 119.29.29.29, 114.114.114.114]
+    listen: 0.0.0.0:53
     enhanced-mode: fake-ip
     fake-ip-range: 198.18.0.1/16
     use-hosts: true
     respect-rules: true
-    proxy-server-nameserver: [223.5.5.5, 119.29.29.29, 114.114.114.114]
-    nameserver: [223.5.5.5, 119.29.29.29, 114.114.114.114]
-    fallback: [1.1.1.1, 8.8.8.8]
-    fallback-filter: { geoip: true, geoip-code: CN, geosite: [gfw], ipcidr: [240.0.0.0/4], domain: [+.google.com, +.facebook.com, +.youtube.com] }
+    default-nameserver:
+        - 223.5.5.5
+        - 119.29.29.29
+        - 114.114.114.114
+    nameserver:
+        - https://doh.pub/dns-query
+        - https://dns.alidns.com/dns-query
+        - https://doh.360.cn/dns-query
+        - https://dns.twnic.tw/dns-query
+        
+    fallback:
+        - https://1.1.1.1/dns-query
+        - https://1.0.0.1/dns-query
+        - https://8.8.8.8/dns-query
+        - https://8.8.4.4/dns-query
+        - https://dns.google/dns-query
+        - https://dns11.quad9.net/dns-query
+        - https://dns10.quad9.net/dns-query
+        - https://dns.quad9.net/dns-query
+        - https://dns.cloudflare.com/dns-query
+        - https://doh.opendns.com/dns-query
+        - https://doh.libredns.gr/dns-query
+        - https://doh.libredns.gr/ads
+        
+    fallback-filter:
+        geoip: true
+        geoip-code: CN
+        geosite:
+            - gfw
+            - greatfire
+            - tld-!cn
+            - geolocation-!cn
+            - amazon
+            - google
+            - facebook
+            - twitter
+            - telegram
+            - discord
+            - openai
+            - cloudflare
+            - fastly
+            - akamai
+        ipcidr:
+            - 0.0.0.0/8
+            - 10.0.0.0/8
+            - 127.0.0.0/8
+            - 169.254.0.0/16
+            - 172.16.0.0/12
+            - 192.168.0.0/16
+            - 224.0.0.0/4
+            - 240.0.0.0/4
+        domain:
+            - "+.google.com"
+            - "+.googleapis.com"
+            - "+.gstatic.com"
+            - "+.facebook.com"
+            - "+.fbcdn.net"
+            - "+.youtube.com"
+            - "+.ytimg.com"
+            - "+.twitter.com"
+            - "+.twimg.com"
+            - "+.github.com"
+            - "+.githubassets.com"
+            - "+.github.io"
+            - "+.amazon.com"
+            - "+.amazonaws.com"
+            - "+.cloudfront.net"
+            - "+.openai.com"
+            - "+.ai.com"
+            - "+.discord.com"
+            - "+.discordapp.com"
+            - "+.telegram.org"
+            - "+.t.me"
+            - "+.cdninstagram.com"
+            - "+.whatsapp.com"
+            - "+.instagram.com"
+            - "+.reddit.com"
+            - "+.medium.com"
+            - "+.wikipedia.org"
+            - "+.wikimedia.org"
+            - "+.akamai.net"
+            - "+.akamaiedge.net"
+            - "+.cloudflare.com"
+            - "+.fastly.net"
+
+    proxy-server-nameserver:
+        - 223.5.5.5

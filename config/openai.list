@@ -1,4 +1,37 @@
+# 核心 LLM
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,aistudio.google.com
 DOMAIN-SUFFIX,perplexity.ai
 DOMAIN-SUFFIX,pplx.ai
-DOMAIN-SUFFIX,aistudio.google.com
+DOMAIN-SUFFIX,poe.com
+DOMAIN-SUFFIX,cohere.com
+DOMAIN-SUFFIX,mistral.ai
+
+# 图像/视频 (AIGC)
+DOMAIN-SUFFIX,midjourney.com
+DOMAIN-SUFFIX,discord.com
+DOMAIN-SUFFIX,stability.ai
+DOMAIN-SUFFIX,runwayml.com
+DOMAIN-SUFFIX,pika.art
+DOMAIN-SUFFIX,firefly.adobe.com
+DOMAIN-SUFFIX,leonardo.ai
+
+# 语音/音乐 AI
+DOMAIN-SUFFIX,elevenlabs.io
+DOMAIN-SUFFIX,suno.ai
+DOMAIN-SUFFIX,udio.com
+
+# 开发/企业级/生产力
+DOMAIN-SUFFIX,githubcopilot.com
+DOMAIN-SUFFIX,copilot.microsoft.com
+DOMAIN-SUFFIX,notion.so
+DOMAIN-SUFFIX,replicate.com
+DOMAIN-SUFFIX,x.ai
 DOMAIN-SUFFIX,you.com
+DOMAIN-SUFFIX,huggingface.co

@@ -26,7 +26,7 @@ ruleset=🐟 漏网之鱼,[]FINAL
 # 策略组
 custom_proxy_group=🚀 模式选择`select`[]👋 手动选择`[]📉 低倍率`[]🇭🇰 香港节点`[]🇯🇵 日本节点`[]🇸🇬 新加坡节点`[]🇺🇸 美国节点`[]🇪🇺 欧洲节点
 custom_proxy_group=👋 手动选择`select`(?!(.*(剩余流量|过期时间|重置|官网|有效期|流量统计|加入群组|联系客服).*))
-custom_proxy_group=📉 低倍率`select`(0.1x)
+custom_proxy_group=📉 低倍率`select`(0.1x|倍率)
 # 功能组
 custom_proxy_group=🤖 OpenAI`select`[]🚀 模式选择`[]👋 手动选择`((?!日本专线[4-6]|新加坡专线4)(日本专线|美国洛杉矶专线5|堪萨斯|新加坡专线|日本[1-6]号|新加坡三网专线))
 custom_proxy_group=📲 Telegram`select`[]🚀 模式选择`[]👋 手动选择`(?!(.*(剩余流量|过期时间|重置|官网|有效期|流量统计).*))`[]DIRECT

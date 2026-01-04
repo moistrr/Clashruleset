@@ -26,6 +26,7 @@
 - DOMAIN-SUFFIX,poe.com
 - DOMAIN-SUFFIX,cohere.com
 - DOMAIN-SUFFIX,mistral.ai
+- GEOSITE,openai
 
 # === 图像 & 视频 AI (AIGC) ===
 - DOMAIN-SUFFIX,midjourney.com

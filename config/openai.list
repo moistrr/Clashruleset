@@ -1,4 +1,3 @@
-# === Gemini & Google AI 相关 ===
 DOMAIN,ai.google.dev
 DOMAIN,alkalimakersuite-pa.clients6.google.com
 DOMAIN,makersuite.google.com
@@ -13,8 +12,6 @@ DOMAIN-SUFFIX,aistudio.google.com
 DOMAIN-KEYWORD,colab
 DOMAIN-KEYWORD,developerprofiles
 DOMAIN-KEYWORD,generativelanguage
-
-# === 核心 LLM (ChatGPT / Claude / 其他) ===
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,oaistatic.com
@@ -26,9 +23,6 @@ DOMAIN-SUFFIX,pplx.ai
 DOMAIN-SUFFIX,poe.com
 DOMAIN-SUFFIX,cohere.com
 DOMAIN-SUFFIX,mistral.ai
-GEOSITE,openai
-
-# === 图像 & 视频 AI (AIGC) ===
 DOMAIN-SUFFIX,midjourney.com
 DOMAIN-SUFFIX,discord.com
 DOMAIN-SUFFIX,stability.ai
@@ -36,13 +30,9 @@ DOMAIN-SUFFIX,runwayml.com
 DOMAIN-SUFFIX,pika.art
 DOMAIN-SUFFIX,firefly.adobe.com
 DOMAIN-SUFFIX,leonardo.ai
-
-# === 语音 & 音乐 AI ===
 DOMAIN-SUFFIX,elevenlabs.io
 DOMAIN-SUFFIX,suno.ai
 DOMAIN-SUFFIX,udio.com
-
-# === 生产力 & 开发相关 ===
 DOMAIN-SUFFIX,githubcopilot.com
 DOMAIN-SUFFIX,copilot.microsoft.com
 DOMAIN-SUFFIX,notion.so

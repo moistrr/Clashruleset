@@ -2,7 +2,10 @@
 ruleset=🚫 禁止访问,clash-domain:https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Clash.yaml
 ruleset=🎬 Emby,https://raw.githubusercontent.com/moistrr/Clashruleset/refs/heads/main/config/emby.list
 ruleset=🎬 Emby,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Emby/Emby.list
-ruleset=🤖 OpenAI,https://raw.githubusercontent.com/moistrr/Clashruleset/refs/heads/main/config/openai.list
+ruleset=🤖 OpenAI,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/OpenAI/OpenAI.list
+ruleset=🤖 OpenAI,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Gemini/Gemini.list
+ruleset=🤖 OpenAI,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Claude/Claude.list
+ruleset=🤖 OpenAI,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Copilot/Copilot.list
 ruleset=🤖 OpenAI,https://raw.githubusercontent.com/moistrr/Clashruleset/refs/heads/main/config/googleplay.list
 ruleset=🤖 OpenAI,clash-classic:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GoogleFCM/GoogleFCM.yaml
 ruleset=📲 Telegram,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
@@ -26,9 +29,9 @@ ruleset=🐟 漏网之鱼,[]FINAL
 # 策略组
 custom_proxy_group=🚀 模式选择`select`[]👋 手动选择`[]📉 低倍率`[]🇭🇰 香港节点`[]🇯🇵 日本节点`[]🇸🇬 新加坡节点`[]🇺🇸 美国节点`[]🇪🇺 欧洲节点
 custom_proxy_group=👋 手动选择`select`(?!(.*(剩余流量|过期时间|重置|官网|有效期|流量统计|加入群组|联系客服).*))
-custom_proxy_group=📉 低倍率`select`(0.1x|倍率)
+custom_proxy_group=📉 低倍率`select`((?!日本专线4)(日本专线|美国洛杉矶|堪萨斯|纽约|香港|移动专属|BT下载|美国[1-3]号|日本[1-6]号))
 # 功能组
-custom_proxy_group=🤖 OpenAI`select`[]🚀 模式选择`[]👋 手动选择`((?!日本专线[4-6]|新加坡专线4)(日本专线|美国洛杉矶专线5|堪萨斯|新加坡专线|日本[1-6]号|新加坡三网专线))
+custom_proxy_group=🤖 OpenAI`select`[]🚀 模式选择`[]👋 手动选择`((?!日本专线[4-6]|新加坡专线4)(日本专线|美国洛杉矶专线5|堪萨斯|新加坡专线|日本[1-6]号|新加坡三网专线|美国[1-3]号|移动专属))
 custom_proxy_group=📲 Telegram`select`[]🚀 模式选择`[]👋 手动选择`(?!(.*(剩余流量|过期时间|重置|官网|有效期|流量统计).*))`[]DIRECT
 
 # 流媒体

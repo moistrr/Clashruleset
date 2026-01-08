@@ -42,7 +42,6 @@ DOMAIN-SUFFIX,emby.wtf
 DOMAIN-SUFFIX,emby.xeton.dev
 DOMAIN-SUFFIX,emby.ytoo.li
 DOMAIN-SUFFIX,embymv.tk
-DOMAIN-SUFFIX,embyplus.org
 DOMAIN-SUFFIX,embyserver.ga
 DOMAIN-SUFFIX,hinet.jmsooo.com
 DOMAIN-SUFFIX,imetyou.top
@@ -61,13 +60,15 @@ DOMAIN-SUFFIX,poloemby.xyz
 DOMAIN-SUFFIX,pornemby.club
 DOMAIN-SUFFIX,servers.xeton.dev
 DOMAIN-SUFFIX,xmsl.org
+DOMAIN-SUFFIX,emby1.69yun69.com
+DOMAIN-SUFFIX,emby2.69yun69.com
+DOMAIN-SUFFIX,emby3.69yun69.com
+DOMAIN-SUFFIX,matrix.313445.xyz
+DOMAIN-SUFFIX,cctv.paoluma.de
 DOMAIN-KEYWORD,emby.wtf
 DOMAIN-KEYWORD,emby
 DOMAIN-KEYWORD,jmsooo
 DOMAIN-KEYWORD,odysseyplus
-PROCESS-NAME,com.mb.android
-PROCESS-NAME,com.hush.yamby
-PROCESS-NAME,com.mountains.hills
 DOMAIN-SUFFIX,tanhuatv.site
 DOMAIN-SUFFIX,1024.name
 DOMAIN-SUFFIX,cinema.313445.xyz
